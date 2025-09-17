@@ -1,6 +1,8 @@
 let num = 16;
 // MAKE the global variable num with the value 16. This will be the default value.
 
+const container = document.querySelector("#container");
+
 function createGrid() {
     const product = num * num;
     for (let i = 0; i <= product; i++) {
