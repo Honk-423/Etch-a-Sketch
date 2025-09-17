@@ -1,6 +1,11 @@
 let num = 16;
 // MAKE the global variable num with the value 16. This will be the default value.
 
+function createGrid() {
+    const product = num * num;
+    for (let i = 0; i <= product; i++) {
+    };
+};
 /*
 *   MAKE the function createGrid.
 *   REMOVE any old grids.
@@ -13,6 +18,7 @@ let num = 16;
 */
 
 // CALL createGrid.
+createGrid();
 
 /* 
 *   MAKE a reference to btn using querySelector.
