@@ -8,7 +8,7 @@ function createGrid() {
     for (let i = 0; i <= product; i++) {
         let grid = document.createElement("div");
         grid.classList.toggle("gridDiv");
-        container.appendChild(grid)
+        container.appendChild(grid);
     };
 };
 /*
