@@ -1,3 +1,4 @@
+let num = 16;
 // MAKE the global variable num with the value 16. This will be the default value.
 
 /*
