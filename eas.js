@@ -15,13 +15,12 @@ function createGrid() {
 };
 /*
 *   MAKE the function createGrid.
-*   REMOVE any old grids.
 *   MAKE the variable product and set its value to num times num.
 *   MAKE for loop and have it loop until the iteration 
 *   equals product. 
-*   CREATE the element grid inside of the loop, then give it the class
+*   CREATE the element gridSquare inside of the loop, then give it the class
 *   gridDiv.
-*   APPEND grid to container.
+*   APPEND gridSquare to container.
 */
 
 // CALL createGrid.
@@ -34,14 +33,19 @@ createGrid();
 *   inputs a value less than 100, run the rest of the code. ELSE, alert
 *   the user that num was too large and to please input a number less
 *   than 100, then BREAK.
+*   MAKE the variable allGridSquares and use querySelectorAll to select
+*   every instance of gridSquare.
+*   REMOVE all instances of gridSquare by using forEach on 
+*   allGridSquares, then element.remove.
 *   CALL createGrid.
 */
 
 /* 
-*   MAKE the background-color of grid change to black when hovering. 
-*   Once that is working, RANDOMIZE the background-color of grid when
-*   hovering. This will likely require the use of Math.random, 
-*   Math.floor, and Math.ceil.
-*   IF hover, darken each grid by 10%. May need to enable hover with
+*   MAKE the background-color of gridSquare change to black when 
+*   hovering and make each squareGrid 1px wide. Once that is working,
+*   RANDOMIZE the background-color of gridSquare when hovering. This 
+*   will likely require the use of Math.random, Math.floor, and 
+*   Math.ceil.
+*   IF hover, darken each gridSquare by 10%. May need to enable hover with
 *   addEventListener instead to get this working.
 */
