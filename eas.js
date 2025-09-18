@@ -26,6 +26,7 @@ function createGrid() {
 // CALL createGrid.
 createGrid();
 
+const btn = document.querySelector("#btn");
 /* 
 *   MAKE a reference to btn using querySelector.
 *   MAKE btn respond to being clicked by using addEventListener.
