@@ -3,14 +3,14 @@ let num = 16;
 
 const container = document.querySelector("#container");
 
-let grid;
+let gridSquare;
 
 function createGrid() {
     const product = num * num;
     for (let i = 0; i <= product; i++) {
-        grid = document.createElement("div");
-        grid.classList.toggle("gridDiv");
-        container.appendChild(grid);
+        gridSquare = document.createElement("div");
+        gridSquare.classList.toggle("gridDiv");
+        container.appendChild(gridSquare);
     };
 };
 /*
