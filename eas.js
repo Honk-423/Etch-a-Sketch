@@ -37,6 +37,7 @@ btn.addEventListener("click", () => {
             allGridSquares.forEach(square => {
                 square.remove();
             });
+            
             break;
         } else if (num === null) {
             break;
