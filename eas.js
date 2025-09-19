@@ -32,6 +32,11 @@ btn.addEventListener("click", () => {
         num = prompt("Input a number");
         if (num > 0 && num < 100 || num === null) {
             num = +num;
+
+            const allGridSquares = document.querySelectorAll(".gridDiv");
+            allGridSquares.forEach(square => {
+                square.remove();
+            });
             break;
         } else {
             alert("Please input a valid value");
