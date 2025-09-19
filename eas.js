@@ -27,6 +27,14 @@ function createGrid() {
 createGrid();
 
 const btn = document.querySelector("#btn");
+btn.addEventListener("click", () => {
+    while (true) {
+        num = prompt("Input a number");
+        if (num > 0 && num < 100 || num === null) {
+            break;
+        };
+    };
+});
 /* 
 *   MAKE a reference to btn using querySelector.
 *   MAKE btn respond to being clicked by using addEventListener.
