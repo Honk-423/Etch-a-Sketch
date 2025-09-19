@@ -38,6 +38,8 @@ btn.addEventListener("click", () => {
                 square.remove();
             });
             
+            createGrid();
+            
             break;
         } else if (num === null) {
             break;
