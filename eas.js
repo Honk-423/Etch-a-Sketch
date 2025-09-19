@@ -7,7 +7,7 @@ let gridSquare;
 
 function createGrid() {
     const product = num * num;
-    for (let i = 0; i <= product; i++) {
+    for (let i = 1; i <= product; i++) {
         gridSquare = document.createElement("div");
         gridSquare.classList.toggle("gridDiv");
         container.appendChild(gridSquare);
