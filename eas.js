@@ -32,6 +32,8 @@ btn.addEventListener("click", () => {
         num = prompt("Input a number");
         if (num > 0 && num < 100 || num === null) {
             break;
+        } else {
+            alert("Please input a valid value");
         };
     };
 });
