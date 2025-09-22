@@ -63,6 +63,11 @@ btn.addEventListener("click", () => {
 *   CALL createGrid.
 */
 
+/*  BTN BUG FIX 
+*   Click btn more than once reveals that, after erasing the default grid, 
+*   grids are being made beneath the previous grid.
+*/
+
 /* 
 *   MAKE the background-color of gridSquare change to black when 
 *   hovering and make each squareGrid 1px wide. Once that is working,
