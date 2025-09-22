@@ -63,6 +63,11 @@ btn.addEventListener("click", () => {
 *   CALL createGrid.
 */
 
+allGridSquares.forEach(square => {
+    square.addEventListener("mouseenter", () => {
+        square.setAttribute("style", "background-color: black;")
+    });
+});
 /* 
 *   MAKE the background-color of gridSquare change to black when 
 *   hovering and make each squareGrid 1px wide. Once that is working,
