@@ -26,8 +26,6 @@ function createGrid() {
 // CALL createGrid.
 createGrid();
 
-const allGridSquares = document.querySelectorAll(".gridDiv");
-
 const btn = document.querySelector("#btn");
 btn.addEventListener("click", () => {
     while (true) {
@@ -35,9 +33,7 @@ btn.addEventListener("click", () => {
         if (num > 0 && num < 100) {
             num = +num;
 
-            allGridSquares.forEach(square => {
-                square.remove();
-            });
+            container.replaceChildren();
             
             createGrid();
             
