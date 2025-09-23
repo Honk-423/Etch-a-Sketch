@@ -1,7 +1,13 @@
-#container {
+div#outer-container {
     display: flex;
     height: 100%;
-    width: 100%;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    height: 92%;
+    width: 70%;
 }
 
 .gridDiv {
