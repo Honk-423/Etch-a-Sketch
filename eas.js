@@ -63,7 +63,11 @@ btn.addEventListener("click", () => {
 *   CALL createGrid.
 */
 
-function getRandomRGB(red, green, blue) {
+let red;
+let green;
+let blue;
+
+function getRandomRGB() {
     function getRandomNumber(min, max) {
         min = Math.ceil(0);
         max = Math.floor(255);
