@@ -63,6 +63,12 @@ btn.addEventListener("click", () => {
 *   CALL createGrid.
 */
 
+function getRandomRGB(red, green, blue) {
+    function getRandomNumber(min, max) {
+
+    };
+};
+
 allGridSquares.forEach(square => {
     square.addEventListener("mouseenter", () => {
         square.setAttribute("style", "background-color: black;")
