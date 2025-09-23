@@ -70,6 +70,10 @@ function getRandomRGB(red, green, blue) {
 
         return Math.floor( Math.random() * (max - min + 1) ) + min;
     };
+    
+    red = getRandomNumber();
+    green = getRandomNumber();
+    blue = getRandomNumber();
 
 };
 
