@@ -65,8 +65,12 @@ btn.addEventListener("click", () => {
 
 function getRandomRGB(red, green, blue) {
     function getRandomNumber(min, max) {
+        min = Math.ceil(0);
+        max = Math.floor(255);
 
+        return Math.floor( Math.random() * (max - min + 1) ) + min;
     };
+
 };
 
 allGridSquares.forEach(square => {
