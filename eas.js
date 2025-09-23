@@ -83,7 +83,8 @@ function getRandomRGB() {
 
 allGridSquares.forEach(square => {
     square.addEventListener("mouseenter", () => {
-        square.setAttribute("style", "background-color: black;")
+        getRandomRGB();
+        square.setAttribute(`style`, `background-color: rgb( ${red}, ${green}, ${blue} );`);
     });
 });
 /* 
