@@ -82,8 +82,11 @@ function getRandomRGB() {
 };
 
 allGridSquares.forEach(square => {
+    let opacity = 0;
     square.addEventListener("mouseenter", (e) => {
-        let opacity = 0;
+        if (opacity <= 100) {
+            opacity = opacity + 10;
+        };
         
         getRandomRGB();
         e.target.setAttribute(`style`, 
