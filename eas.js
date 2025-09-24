@@ -64,6 +64,44 @@ btn.addEventListener("click", () => {
 *   grids are being made beneath the previous grid.
 */
 
+/*  BTN BUG FIX 
+*   Click btn more than once reveals that, after erasing the default grid, 
+*   grids are being made beneath the previous grid.
+*/
+
+let red;
+let green;
+let blue;
+
+function getRandomRGB() {
+    function getRandomNumber(min, max) {
+        min = Math.ceil(0);
+        max = Math.floor(255);
+
+        return Math.floor( Math.random() * (max - min + 1) ) + min;
+    };
+    
+    red = getRandomNumber();
+    green = getRandomNumber();
+    blue = getRandomNumber();
+
+};
+
+const allGridSquares = document.querySelectorAll(".gridDiv");
+
+allGridSquares.forEach(square => {
+    let opacity = 0;
+    square.addEventListener("mouseenter", (e) => {
+        if (opacity <= 100) {
+            opacity = opacity + 10;
+        };
+        
+        getRandomRGB();
+        e.target.setAttribute(`style`, 
+            `background-color: rgb( ${red}, ${green}, ${blue} );
+             opacity: ${opacity}%;`);
+    }); 
+});
 /* 
 *   MAKE the background-color of gridSquare change to black when 
 *   hovering and make each squareGrid 1px wide. Once that is working,
