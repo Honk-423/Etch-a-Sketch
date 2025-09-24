@@ -8,6 +8,10 @@ body {
     height: 4%;
 }
 
+#btn {
+    margin: 4px;
+}
+
 div#outer-container {
     display: flex;
     height: 100%;
