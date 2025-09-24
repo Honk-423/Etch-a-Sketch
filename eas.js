@@ -82,10 +82,14 @@ function getRandomRGB() {
 };
 
 allGridSquares.forEach(square => {
-    square.addEventListener("mouseenter", () => {
+    square.addEventListener("mouseenter", (e) => {
+        let opacity = 0;
+        
         getRandomRGB();
-        square.setAttribute(`style`, `background-color: rgb( ${red}, ${green}, ${blue} );`);
-    });
+        e.target.setAttribute(`style`, 
+            `background-color: rgb( ${red}, ${green}, ${blue} );
+             opacity: ${opacity}%;`);
+    }); 
 });
 /* 
 *   MAKE the background-color of gridSquare change to black when 
