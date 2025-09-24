@@ -1,3 +1,8 @@
+#btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 div#outer-container {
     display: flex;
     height: 100%;
