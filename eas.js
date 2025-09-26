@@ -14,6 +14,20 @@ function createGrid() {
         gridSquare.classList.toggle("gridDiv");
         container.appendChild(gridSquare);
     };
+
+    for (let i = 0; i < allGridSquares.length; i++) {
+        let opacity = 0;
+        allGridSquares[i].addEventListener("mouseenter", (e) => {
+            if (opacity <= 100) {
+                opacity = opacity + 10;
+            };
+            
+            getRandomRGB();
+            e.target.setAttribute(`style`, 
+                `background-color: rgb( ${red}, ${green}, ${blue} );
+                opacity: ${opacity}%;`);
+        }); 
+};
 };
 /*
 *   MAKE the function createGrid.
@@ -89,20 +103,6 @@ function getRandomRGB() {
 
 };
 
-
-for (let i = 0; i < allGridSquares.length; i++) {
-    let opacity = 0;
-    allGridSquares[i].addEventListener("mouseenter", (e) => {
-        if (opacity <= 100) {
-            opacity = opacity + 10;
-        };
-        
-        getRandomRGB();
-        e.target.setAttribute(`style`, 
-            `background-color: rgb( ${red}, ${green}, ${blue} );
-             opacity: ${opacity}%;`);
-    }); 
-};
 /* 
 *   MAKE the background-color of gridSquare change to black when 
 *   hovering and make each squareGrid 1px wide. Once that is working,
