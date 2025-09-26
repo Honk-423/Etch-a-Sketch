@@ -17,16 +17,19 @@ const outerContainer = document.querySelector("#outer-container");
 
 const container = document.querySelector("#container");
 
-const allGridSquares = container.children;
+let allGridSquares;
 
 let gridSquare;
 
 function createGrid() {
     const product = num * num;
+    
     for (let i = 1; i <= product; i++) {
         gridSquare = document.createElement("div");
         gridSquare.classList.toggle("gridDiv");
         container.appendChild(gridSquare);
+
+        allGridSquares = container.children;
     };
 
     for (let i = 0; i < allGridSquares.length; i++) {
