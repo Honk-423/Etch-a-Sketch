@@ -3,6 +3,8 @@ let num = 16;
 
 const container = document.querySelector("#container");
 
+const allGridSquares = container.children;
+
 let gridSquare;
 
 function createGrid() {
@@ -87,7 +89,6 @@ function getRandomRGB() {
 
 };
 
-const allGridSquares = document.querySelectorAll(".gridDiv");
 
 allGridSquares.forEach(square => {
     let opacity = 0;
