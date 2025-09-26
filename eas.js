@@ -1,6 +1,8 @@
 let num = 16;
 // MAKE the global variable num with the value 16. This will be the default value.
 
+const outerContainer = document.querySelector("#outer-container");
+
 /* 
 *   REMOVE container from HTML and JS
 *   CREATE container in JS and give it the class container
