@@ -1,6 +1,18 @@
 let num = 16;
 // MAKE the global variable num with the value 16. This will be the default value.
 
+/* 
+*   REMOVE container from HTML and JS
+*   CREATE container in JS and give it the class container
+*   MAKE reference to outer-container then append container to it
+*/
+
+/* 
+*   IF i divided by num has a reminder of 0, create and append 
+*   container. Then append gridSquare to container until i is divisible 
+*   by num again.
+*/
+
 const container = document.querySelector("#container");
 
 const allGridSquares = container.children;
