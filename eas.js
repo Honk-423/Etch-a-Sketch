@@ -3,6 +3,8 @@ let num = 16;
 
 const outerContainer = document.querySelector("#outer-container");
 
+const allContainers = outerContainer.children;
+
 /* 
 *   REMOVE container from HTML and JS
 *   CREATE container in JS and give it the class container
@@ -32,7 +34,6 @@ function createGrid() {
         } else {
             continue;
         };
-
         gridSquare = document.createElement("div");
         gridSquare.classList.toggle("gridDiv");
         container.appendChild(gridSquare);
