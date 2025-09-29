@@ -28,11 +28,11 @@ function createGrid() {
 
     for (let i = 1; i <= product; i++) {
         if (i % num === 0) {
-        container = document.createElement("div");
-        container.classList.toggle("container");
-        outerContainer.appendChild(container);
+            container = document.createElement("div");
+            container.classList.toggle("container");
+            outerContainer.appendChild(container);
         };
-        
+
         gridSquare = document.createElement("div");
         gridSquare.classList.toggle("gridDiv");
         container.appendChild(gridSquare);
