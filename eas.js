@@ -15,7 +15,7 @@ const outerContainer = document.querySelector("#outer-container");
 *   by num again.
 */
 
-const container = document.querySelector("#container");
+let container;
 
 let allGridSquares;
 
@@ -25,6 +25,14 @@ function createGrid() {
     const product = num * num;
     
     for (let i = 1; i <= product; i++) {
+        if (i % num === 0) {
+        container = document.createElement("div");
+        container.classList.toggle("container");
+        outerContainer.appendChild(container);
+        } else {
+            continue;
+        };
+
         gridSquare = document.createElement("div");
         gridSquare.classList.toggle("gridDiv");
         container.appendChild(gridSquare);
