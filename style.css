@@ -24,7 +24,7 @@ div#outer-container {
 }
 
 .gridDiv {
-
+    flex: auto;
 }
 
 /* 
