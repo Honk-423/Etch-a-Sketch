@@ -32,13 +32,17 @@ function createGrid() {
             container.classList.toggle("container");
             outerContainer.appendChild(container);
         };
-
-        gridSquare = document.createElement("div");
-        gridSquare.classList.toggle("gridDiv");
-        container.appendChild(gridSquare);
-
-        allGridSquares = container.children;
     };
+
+    for (let j = 0; j < allContainers.length; j++) {
+        for (let k = 1; k <= num; k++) {
+            gridSquare = document.createElement("div");
+            gridSquare.classList.toggle("gridDiv");
+            allContainers[j].appendChild(gridSquare);
+        };
+    };
+
+    allGridSquares = container.children;
 
     for (let i = 0; i < allGridSquares.length; i++) {
         let opacity = 0;
