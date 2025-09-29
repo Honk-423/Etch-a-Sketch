@@ -42,7 +42,7 @@ function createGrid() {
         };
     };
 
-    allGridSquares = container.children;
+        allGridSquares = document.getElementsByClassName("gridDiv");
 
     for (let l = 0; l < allGridSquares.length; l++) {
         let opacity = 0;
