@@ -31,9 +31,8 @@ function createGrid() {
         container = document.createElement("div");
         container.classList.toggle("container");
         outerContainer.appendChild(container);
-        } else {
-            continue;
         };
+        
         gridSquare = document.createElement("div");
         gridSquare.classList.toggle("gridDiv");
         container.appendChild(gridSquare);
