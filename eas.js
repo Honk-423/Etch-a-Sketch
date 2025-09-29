@@ -23,7 +23,7 @@ let gridSquare;
 
 function createGrid() {
     const product = num * num;
-    
+
     for (let i = 1; i <= product; i++) {
         if (i % num === 0) {
         container = document.createElement("div");
@@ -74,7 +74,7 @@ btn.addEventListener("click", () => {
         if (num > 0 && num < 100) {
             num = +num;
 
-            container.replaceChildren();
+            outerContainer.replaceChildren();
             
             createGrid();
             
