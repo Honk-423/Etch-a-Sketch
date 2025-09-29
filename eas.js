@@ -44,9 +44,9 @@ function createGrid() {
 
     allGridSquares = container.children;
 
-    for (let i = 0; i < allGridSquares.length; i++) {
+    for (let l = 0; l < allGridSquares.length; l++) {
         let opacity = 0;
-        allGridSquares[i].addEventListener("mouseenter", (e) => {
+        allGridSquares[l].addEventListener("mouseenter", (e) => {
             if (opacity <= 100) {
                 opacity = opacity + 10;
             };
