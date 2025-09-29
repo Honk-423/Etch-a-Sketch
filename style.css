@@ -18,6 +18,11 @@ div#outer-container {
     justify-content: center;
 }
 
+.container {
+    display: flex;
+    flex: auto;
+}
+
 .gridDiv {
 
 }
