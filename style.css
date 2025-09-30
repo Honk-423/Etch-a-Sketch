@@ -14,6 +14,7 @@ body {
 
 div#outermost-container {
     display: flex;
+    justify-content: center;
     height: 96%;
     width: 100%;
 }
