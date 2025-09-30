@@ -21,6 +21,7 @@ div#outer-container {
     display: flex;
     flex-flow: column;
     height: 90%;
+    width: 60%;
     justify-content: center;
 }
 
