@@ -13,6 +13,7 @@ body {
 }
 
 div#outermost-container {
+    display: flex;
     height: 96%;
     width: 100%;
 }
