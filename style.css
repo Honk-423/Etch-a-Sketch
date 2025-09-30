@@ -12,6 +12,11 @@ body {
     margin: 4px;
 }
 
+div#outermost-container {
+    height: 96%;
+    width: 100%;
+}
+
 div#outer-container {
     display: flex;
     flex-flow: column;
