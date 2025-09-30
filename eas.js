@@ -1,21 +1,8 @@
 let num = 16;
-// MAKE the global variable num with the value 16. This will be the default value.
 
 const outerContainer = document.querySelector("#outer-container");
 
 const allContainers = outerContainer.children;
-
-/* 
-*   REMOVE container from HTML and JS
-*   CREATE container in JS and give it the class container
-*   MAKE reference to outer-container then append container to it
-*/
-
-/* 
-*   IF i divided by num has a reminder of 0, create and append 
-*   container. Then append gridSquare to container until i is divisible 
-*   by num again.
-*/
 
 let container;
 
@@ -58,17 +45,7 @@ function createGrid() {
         }); 
 };
 };
-/*
-*   MAKE the function createGrid.
-*   MAKE the variable product and set its value to num times num.
-*   MAKE for loop and have it loop until the iteration 
-*   equals product. 
-*   CREATE the element gridSquare inside of the loop, then give it the class
-*   gridDiv.
-*   APPEND gridSquare to container.
-*/
 
-// CALL createGrid.
 createGrid();
 
 const btn = document.querySelector("#btn");
@@ -90,29 +67,6 @@ btn.addEventListener("click", () => {
         };
     };
 });
-/* 
-*   MAKE a reference to btn using querySelector.
-*   MAKE btn respond to being clicked by using addEventListener.
-*   ASK the user to input a value for num by using PROMPT. IF the user
-*   inputs a value less than 100, run the rest of the code. ELSE, alert
-*   the user that num was too large and to please input a number less
-*   than 100, then BREAK.
-*   MAKE the variable allGridSquares and use querySelectorAll to select
-*   every instance of gridSquare.
-*   REMOVE all instances of gridSquare by using forEach on 
-*   allGridSquares, then element.remove.
-*   CALL createGrid.
-*/
-
-/*  BTN BUG FIX 
-*   Click btn more than once reveals that, after erasing the default grid, 
-*   grids are being made beneath the previous grid.
-*/
-
-/*  BTN BUG FIX 
-*   Click btn more than once reveals that, after erasing the default grid, 
-*   grids are being made beneath the previous grid.
-*/
 
 let red;
 let green;
@@ -131,13 +85,3 @@ function getRandomRGB() {
     blue = getRandomNumber();
 
 };
-
-/* 
-*   MAKE the background-color of gridSquare change to black when 
-*   hovering and make each squareGrid 1px wide. Once that is working,
-*   RANDOMIZE the background-color of gridSquare when hovering. This 
-*   will likely require the use of Math.random, Math.floor, and 
-*   Math.ceil.
-*   IF hover, darken each gridSquare by 10%. May need to enable hover with
-*   addEventListener instead to get this working.
-*/
