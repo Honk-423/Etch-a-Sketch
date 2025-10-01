@@ -29,7 +29,7 @@ function createGrid() {
         };
     };
 
-        allGridSquares = document.getElementsByClassName("gridDiv");
+    allGridSquares = document.getElementsByClassName("gridDiv");
 
     for (let l = 0; l < allGridSquares.length; l++) {
         let opacity = 0;
@@ -41,7 +41,7 @@ function createGrid() {
             getRandomRGB();
             e.target.setAttribute(`style`, 
                 `background-color: rgb( ${red}, ${green}, ${blue} );
-                opacity: ${opacity}%;`);
+                 opacity: ${opacity}%;`);
         }); 
 };
 };
